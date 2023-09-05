@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- CSS bg types -->
+    <link rel="stylesheet" href="../css/bg-types.css">
+
+    <!-- CSS Pokedex -->
+    <link rel="stylesheet" href="../css/pokemon-info.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/aa68db9477.js" crossorigin="anonymous"></script>
+
+    <!-- pokemon-model Scripts -->
+    <script src="../js/pokemon-model.js" defer></script>
+
+    <!-- poke-api Scripts -->
+    <script src="../js/poke-api.js" defer></script>
+
+    <!-- pokemon-info Scripts -->
+    <script src="../js/pokemon-info.js" defer></script>
+</head>
+
+<body>
+    <section class="content">
+        <section class="top-content">
+            <div class="back-heart">
+                <a class="back" href="../../index.html">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+                <button class="heart heart-unclick" type="button">
+                    <p><i class="fa-regular fa-heart"></i></p>
+                </button>
+                <button class="heart heart-click hide" type="button">
+                    <p><i class="fa-solid fa-heart"></i></p>
+                </button>
+            </div>
+
+            <ol class="pokemons">
+                
+            </ol>
+
+        </section>
+
+        <section class="img-btn">
+            <div class="img">
+
+            </div>
+
+            <ul class="title-info">
+                <li><button class="title" id="about" type="button">About</button></li>
+                <li><button class="title" id="base-stats" type="button">Base Stats</button></li>
+            </ul>
+        </section>
+
+
+        <section class="info-about">
+            <div class="properties-about">
+            </div>
+        </section>
+
+        <section class="info-base-stats hide">
+            <div class="properties">
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
